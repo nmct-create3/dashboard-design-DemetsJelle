@@ -390,6 +390,20 @@ input::placeholder {
     height: 100%;
 }
 
+.c-card__header {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: var(--global-whitespace-md); */
+}
+
+.c-card__title {
+    margin-bottom: 0;
+    /* font-size: 18px;
+    line-height: 25px; */
+    font-size: 1.2rem;
+    line-height: calc(var(--global-baseline) * 5);
+}
+
 .c-card__header,
 .c-card__body {
     padding: var(--global-whitespace-md);
@@ -402,6 +416,52 @@ input::placeholder {
 .c-card__header > *:last-child,
 .c-card__body > *:last-child {
     margin-bottom: 0;
+}
+
+.c-custom-select {
+    display: block;
+    position: relative;
+}
+
+.c-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    border: 1px solid var(--global-color-neutral-xx-light);
+    border-radius: var(--global-borderRadius);
+    background-color: #fff;
+    color: blue;
+    font-family: inherit;
+    /* font-size: 13px;
+    line-height: 20px;
+    padding: 4px 10px; */
+    font-size: 0.8666666667rem;
+    line-height: calc(var(--global-baseline) * 4);
+    padding: calc(var(--global-whitespace-xxs) - 1px) var(--global-whitespace-xs);
+    outline: none;
+    box-shadow: var(--inset-shadow);
+    transition: border var(--global-transition-alpha);
+    box-shadow: var(--global-input-shadow);
+}
+
+.c-custom-select__input {
+    padding-right: calc(var(--global-baseline) * 5);
+}
+
+.c-custom-select__symbol {
+    width: calc(11rem / var(--global-root-font-size));
+    height: calc(16rem / var(--global-root-font-size));
+    position: absolute;
+
+    /*In de midden van de dropdown plaatsen*/
+    top: 50%; 
+    /* transform: translateY(calc(-8rem / var(--global-root-font-size))); */
+    transform: translateY(-50%);
+
+    right: var(--global-whitespace-xs);
+    pointer-events: none;/*Het pijltje klikbaar maken*/
+    fill: var(--global-color-neutral-light);
 }
 
 @media(min-width:992px)
