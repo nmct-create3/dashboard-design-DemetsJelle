@@ -84,7 +84,120 @@
                 </h1>
             </div>
             <div class="c-app__topbar">
+                <div class="c-topbar">
+                    <!-- Searchbalk plaatsen -->
+                    <form class="c-search">
+                        <input type="text" class="c-search__input" placeholder="Search transactions, invoices or help">
+                        <!-- Button plaatsen, o-button shit -->
+                        <button class="o-button-reset c-search__button">
+                            <!-- svg opmaak -->
+                            <svg class="c-search__icon"><use xlink:href="#c-icon_search"></use></svg>
+                        </button>
+                    </form>
+    
+                    <!-- De 3 icoontjes bovenaan -->
+                    <div class="c-topbar__quick-nav">
+                        <!-- Plaatsing -->
+                        <nav class="c-quick-nav">
+                            <!-- Plaatsing van de list -->
+                            <ul class="o-list c-quick-nav__list">
+                                <!-- Margin -->
+                                <li class="c-quick-nav__item">
+                                    <a href="#!" class="o-button-reset c-quick-nav__action">
+                                        <!-- Opmaak logo -->
+                                        <svg class="c-quick-nav__icon"><use xlink:href="#c-icon_support"></use></svg>
+                                    </a>
+                                </li>
+                                <li class="c-quick-nav__item">
+                                    <button class="o-button-reset c-quick-nav__action">
+                                        <svg class="c-quick-nav__icon"><use xlink:href="#c-icon_chat"></use></svg>
+                                    </button>
+                                </li>
+                                <li class="c-quick-nav__item">
+                                    <div class="c-dropdown-container">                    <!-- Notification bolletje -->         <!--zichbaar-->
+                                        <button class="o-button-reset c-quick-nav__action c-quick-nav__action--has-notifications c-dropdown-toggle js-dropdown-toggle">
+                                            <svg class="c-quick-nav__icon"><use xlink:href="#c-icon_notification"></use></svg>
+                                        </button>
+                                                                    <!--Groote kader-->      <!--Plaatsing-->
+                                            <div class="c-dropdown c-dropdown--notifications c-dropdown--right">
+                                                <!-- Opmaak van het kader -->
+                                            <div class="c-dropdown__header">
+                                                <!-- Opmaak tekst -->
+                                                <p class="c-dropdown__title u-align-text-center">Notifications</p>
+                                            </div>
+                                                        <!-- Padding  -->
+                                            <div class="c-dropdown__body c-dropdown__body--lg">
+                                                           <!-- Margin, font -->
+                                                <h5 class="u-mb-clear u-text-sm">David Lee</h5>
+                                                           <!--Font, kleur -->
+                                                <p class="u-text-sm u-color-neutral">
+                                                    Hey, I just read your message. How are you?
+                                                </p>
+                                                <h5 class="u-mb-clear u-text-sm">Jonathan Chen</h5>
+                                                <p class="u-text-sm u-color-neutral">
+                                                    Are you available later today to chat?
+                                                </p>
+                                                <h5 class="u-mb-clear u-text-sm">Jackie Berry</h5>
+                                                <p class="u-text-sm u-color-neutral u-mb-clear">
+                                                    I will be unavailable until after 5pm today.
+                                                </p>
+                                            </div>
+                                            <!-- Border opmaak -->
+                                            <div class="c-dropdown__footer">
+                                                <!-- Margin -->
+                                                <p class="u-mb-clear">
+                                                              <!-- Plaating -->
+                                                    <a class="c-dropdown__more-link" href="#!">See all</a>
+                                                </p>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="c-topbar__user">
+                        <!-- Plaatsing -->
+                        <div class="c-user">
+                            <!-- Position container -->
+                            <div class="c-dropdown-container">
+                                                <!--opmaak button, plaatsing, dropdown tonen -->
+                                <button class="o-button-reset c-user__dropdown-button c-dropdown-toggle js-dropdown-toggle">
+                                    John Doe
+                                    <svg class="c-user__dropdown-icon"><use xlink:href="#c-icon_small-down"></use></svg>
+                                </button>
+                                <div class="c-dropdown c-dropdown--right">
+                                    <div class="c-dropdown__body">
+                                        <nav class="c-dropdown__nav">
+                                                       <!--List style, Margin -->
+                                            <ul class="o-list c-dropdown__list">
+                                                <li class="c-dropdown__item">
+                                                    <a href="#!" class="c-dropdown__link">Account settings</a>
+                                                </li>
+                                                <li class="c-dropdown__item">
+                                                    <a href="#!" class="c-dropdown__link">Feedback</a>
+                                                </li>
+                                                <li class="c-dropdown__item">
+                                                    <a href="#!" class="c-dropdown__link">Logout</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- plaatsing, opmaak user avatar -->
+                            <div class="c-user__avatar">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+            
+
+
             <div class="c-app__sidebar">
                 <nav class="c-main-nav">
                     <ul class="o-list c-main-nav__list">
